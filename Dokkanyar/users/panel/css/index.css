@@ -1,0 +1,387 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* This is where my code starts! */
+html {
+  height: 100%;
+}
+
+body {
+  font: 16px isans;
+  direction: rtl !important;
+  background-color: #f2f2f2 !important;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: auto;
+  max-width: 1900px;
+}
+
+.top-menu input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.top-menu .floor {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  border: none;
+  padding-right: 5px;
+  margin: 10px 0 10px 10px;
+  font: 14px isans;
+}
+
+.top-menu .no {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  border: none;
+  padding-right: 5px;
+  margin: 10px;
+  font: 14px isans;
+}
+
+.top-menu .no:focus, .top-menu .floor:focus {
+  outline: none;
+  border-radius: 300px;
+  width: 200px;
+  transition: all 0.3s;
+}
+
+.search {
+  float: right;
+}
+
+.top-menu {
+  background: #212121;
+  height: auto;
+  width: 100%;
+}
+
+.top-menu #user {
+  font-size: 25px;
+  color: #f2f2f2;
+  float: left;
+  cursor: pointer;
+  display: block;
+  margin-top: 12.5px;
+  position: relative;
+}
+
+.top-menu #user:hover {
+  color: #fff;
+}
+
+.clear {
+  clear: both;
+}
+
+.mainmenu {
+  margin-top: 50px;
+  display: none;
+}
+
+.tablink {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #f2f2f2;
+  width: 170px;
+  height: 50px;
+  float: right;
+  padding: 5px 10px;
+  font: 16px isans;
+  margin-left: 10px;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.tablink:focus {
+  background: #fff;
+  outline: none;
+  color: #01579B;
+  transition: all 0.3s;
+}
+
+.tablink:hover {
+  color: #01579B;
+}
+
+.tabcontent {
+  display: none;
+  height: 100%;
+}
+
+#unit-info, #person-info, #history, #pay-history, #sms {
+  background-color: #fff;
+}
+
+#unit-info .unit-items, .person-items, .his-items, .pay-items, .sms-items {
+  width: 250px;
+  height: 40px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, .07);
+  border: 1px solid #ebebeb;
+  font: 16px isans;
+  text-align: center;
+  margin: 20px 0 20px 20px;
+  float: right;
+  padding-top: 5px;
+}
+
+#user ul {
+  display: none;
+  position: absolute;
+  background: #212121;
+  width: 100px;
+  height: auto;
+  z-index: 1;
+  top: 25px;
+  left: 0;
+  border-radius: 3px;
+}
+
+#user ul li {
+  text-align: right;
+  margin-right: 5px;
+  font: 16px isans;
+  padding: 5px;
+  display: block;
+}
+
+#user ul li i {
+  font-size: 16px;
+  color: #c1c1c1;
+  margin-left: 5px;
+}
+
+#user ul li:hover i, #user ul li:hover a {
+  color: #fff;
+}
+
+#user ul li a {
+  text-decoration: none;
+  color: #c1c1c1;
+}
+
+#user:hover ul {
+  display: block;
+}
+
+.tab-title {
+  font: bold 16px isans;
+}
+
+#unit-info .contract {
+  width: 250px;
+  height: 500px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, .07);
+  border: 1px solid #ebebeb;
+  font: 16px isans;
+  text-align: center;
+  margin: 20px 0 20px 0;
+  padding: 5px;
+  float: left;
+}
+
+#unit-info .contract img {
+  width: 240px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.tab-container {
+  width: 1120px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.address-item {
+  width: 790px;
+  height: 40px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, .07);
+  border: 1px solid #ebebeb;
+  font: 16px isans;
+  text-align: center;
+  margin: 20px 0 20px 20px;
+  float: right;
+  padding: 5px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
+
+.image>img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+}
+
+.his-items {
+  cursor: pointer;
+}
+
+.pay-items {
+  cursor: pointer;
+}
+
+.sms-right {
+  float: right;
+}
+
+.sms-right input[type=text] {
+  width: 500px;
+  height: 40px;
+  font: 16px isans;
+  background: #f2f2f2;
+  color: #000;
+  border: none;
+  border-radius: 300px;
+  padding-right: 5px;
+  margin: 20px 0;
+  display: block;
+}
+
+.sms-right input[type=text]:focus, .sms-right input[type=submit] {
+  outline: none;
+}
+
+.sms-right textarea {
+  width: 500px;
+  height: 300px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 3px;
+  color: #000;
+  font: 16px isans;
+  padding: 5px;
+  margin: 20px 0;
+  display: block;
+}
+
+.sms-right input[type=submit] {
+  width: 500px;
+  height: 40px;
+  font: 16px isans;
+  background: #01579B;
+  color: #fff;
+  border: none;
+  border-radius: 300px;
+  padding-right: 5px;
+  margin: 20px 0;
+  display: block;
+}
+
+.sms-right input[type=text]:focus {
+  outline: none;
+}
+
+.sms-left {
+  float: left;
+  height: 800px;
+  width: 270px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+.sms-left div {
+  margin: 0 0 20px 0;
+}
+
+.sms-left::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.sms-left::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.sms-left::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
+.sms-left div span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px
+}
