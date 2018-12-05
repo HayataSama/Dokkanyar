@@ -1,0 +1,519 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* This is where my code starts! */
+html {
+  height: 100%;
+}
+
+body {
+  font: 16px isans;
+  color: #32325d;
+  direction: rtl !important;
+  background-color: #f2f2f2 !important;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: auto;
+  max-width: 1900px;
+}
+
+.top-menu input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.top-menu .floor {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  border: none;
+  padding-right: 5px;
+  margin: 10px 0 10px 10px;
+  font: 14px isans;
+}
+
+.top-menu .no {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  border: none;
+  padding-right: 5px;
+  margin: 10px;
+  font: 14px isans;
+}
+
+.top-menu .floor:focus,
+.top-menu .no:focus {
+  outline: none;
+  border-radius: 300px;
+  width: 200px;
+  transition: all 0.3s;
+}
+
+.search {
+  float: right;
+}
+
+.top-menu {
+  background: #212121;
+  height: auto;
+  width: 100%;
+}
+
+.top-menu #user {
+  font-size: 25px;
+  color: #f2f2f2;
+  float: left;
+  cursor: pointer;
+  display: block;
+  margin-top: 12.5px;
+  position: relative;
+}
+
+.top-menu #user:hover {
+  color: #fff;
+}
+
+.clear {
+  clear: both;
+}
+
+.mainmenu {
+  margin-top: 50px;
+  display: none;
+}
+
+.tablink {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #f2f2f2;
+  width: 170px;
+  height: 40px;
+  float: right;
+  padding: 5px 10px;
+  font: 16px isans;
+  margin-left: 10px;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.tablink:focus {
+  background: #fff;
+  outline: none;
+  color: #1976d2;
+  transition: all 0.3s;
+}
+
+.tablink:hover {
+  color: #1976d2;
+}
+
+.tabcontent {
+  display: none;
+  height: 100%;
+}
+
+#history,
+#pay-history,
+#person-info,
+#sms,
+#unit-info {
+  background-color: #fff;
+}
+
+#unit-info .unit-items,
+.his-items,
+.pay-items,
+.person-items,
+.sms-items {
+  width: 250px;
+  height: 40px;
+  background: #fff;
+  border-radius: 300px;
+  border: 1px solid #dfe1e5;
+  font: 16px isans;
+  text-align: center;
+  margin: 20px 0 20px 20px;
+  float: right;
+  padding-top: 5px;
+}
+
+#unit-info .unit-items:hover,
+.his-items:hover,
+.pay-items:hover,
+.person-items:hover,
+.sms-items:hover {
+  /*  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0); */
+  border-color: #1976d2;
+  transition: 0.3s all;
+}
+
+#user ul {
+  display: none;
+  position: absolute;
+  background: #212121;
+  width: 100px;
+  height: auto;
+  z-index: 1;
+  top: 25px;
+  left: 0;
+  border-radius: 3px;
+}
+
+#user ul li {
+  text-align: right;
+  margin-right: 5px;
+  font: 16px isans;
+  padding: 5px;
+  display: block;
+}
+
+#user ul li i {
+  font-size: 16px;
+  color: #c1c1c1;
+  margin-left: 5px;
+}
+
+#user ul li:hover a,
+#user ul li:hover i {
+  color: #fff;
+}
+
+#user ul li a {
+  text-decoration: none;
+  color: #c1c1c1;
+}
+
+#user:hover ul {
+  display: block;
+}
+
+.tab-title {
+  font: bold 16px isans;
+}
+
+#unit-info .contract {
+  width: 250px;
+  height: 500px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.07);
+  border: 1px solid #ebebeb;
+  font: 16px isans;
+  text-align: center;
+  margin: 20px 0;
+  padding: 5px;
+  float: left;
+}
+
+#unit-info .contract img {
+  width: 240px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.tab-container {
+  width: 1120px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.address-item {
+  width: 790px;
+  height: 40px;
+  background: #fff;
+  border-radius: 300px;
+  border: 1px solid #dfe1e5;
+  font: 16px isans;
+  text-align: center;
+  margin: 20px 0 20px 20px;
+  float: right;
+  padding: 5px;
+}
+
+.address-item:hover {
+  border-color: #1976d2;
+  transition: 0.3s all;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
+
+.image > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+}
+
+.his-items {
+  cursor: pointer;
+}
+
+.pay-items {
+  cursor: pointer;
+}
+
+.sms-items {
+  cursor: pointer;
+}
+
+.sms {
+  margin: 0 auto;
+  width: 790px;
+}
+
+.sms-right {
+  float: right;
+}
+
+.sms-right input[type="text"] {
+  width: 500px;
+  height: 40px;
+  font: 16px isans;
+  background: #f2f2f2;
+  color: #000;
+  border: none;
+  border-radius: 300px;
+  padding-right: 5px;
+  margin: 20px 0;
+  display: block;
+}
+
+.sms-right input[type="submit"],
+.sms-right input[type="text"]:focus {
+  outline: none;
+}
+
+.sms-right textarea {
+  width: 500px;
+  height: 300px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font: 16px isans;
+  padding: 5px;
+  margin: 20px 0;
+  display: block;
+  resize: none;
+}
+
+.sms-right textarea:focus {
+  outline: none;
+}
+
+.sms-right input[type="submit"] {
+  width: 500px;
+  height: 40px;
+  font: 16px isans;
+  background: rgba(25, 118, 210, 0.9);
+  color: #fff;
+  border: none;
+  border-radius: 300px;
+  padding-right: 5px;
+  margin: 20px 0;
+  display: block;
+}
+
+.sms-right input[type="text"]:focus {
+  outline: none;
+}
+
+.sms-left {
+  float: right;
+  height: 420px;
+  width: 270px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.sms-left div {
+  margin: 0 0 20px;
+}
+
+.sms-left::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.sms-left::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.sms-left::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.sms-right input[type=text]:hover,
+.sms-right textarea:hover {
+  background: #ddd;
+  transition: all 0.3s;
+}
+
+.sms-right input[type=text]:focus,
+.sms-right textarea:focus {
+  background: #fff;
+  border: 1px solid #eee;
+  transition: all 0.3s;
+}
+
+.sms-right input[type=submit]:hover {
+  background: rgba(25, 118, 210, 1);
+  transition: all 0.3s;
+}

@@ -1,0 +1,215 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font: 16px isans;
+  direction: rtl !important;
+}
+
+.container {
+  width: 400px !important;
+  height: auto;
+  margin: 150px auto;
+}
+
+div {
+  display: table;
+  margin: 0 auto;
+}
+
+form input[type=text] {
+  display: block;
+  width: 400px;
+  height: 50px;
+  background: #eee;
+  color: #000;
+  border: none;
+  font: 16px isans;
+  border-radius: 300px;
+  margin: 20px 0;
+  padding-right: 15px;
+}
+
+form input[type=password] {
+  display: block;
+  width: 400px;
+  height: 50px;
+  background: #eee;
+  color: #000;
+  border: none;
+  font: 16px isans;
+  border-radius: 300px;
+  margin: 20px 0;
+  padding-right: 15px;
+}
+
+form input[type=password]:hover,
+form input[type=text]:hover {
+  background: #ddd;
+  transition: all 0.3s;
+}
+
+form input[type=password]:focus,
+form input[type=text]:focus {
+  background: #fff;
+  transition: all 0.3s;
+  border: 1px solid #eee;
+}
+
+form button {
+  display: block;
+  width: 400px;
+  height: 50px;
+  background: rgba(25, 118, 210, 0.9);
+  color: #fff;
+  border: none;
+  font: bold 18px isans;
+  border-radius: 300px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: rgba(25, 118, 210, 1);
+  transition: all 0.3s;
+}
+
+form button:focus {
+  outline: none;
+}
+
+form input[type=text]:focus {
+  outline: none;
+}
+
+form input[type=password]:focus {
+  outline: none;
+}
